@@ -5,5 +5,3 @@ with open('input.txt', 'r') as file:
     n_valid = [n_valid + 1 if (len(set(passphrase)) == len(passphrase)) else n_valid for passphrase in passphrases]
 
     print(sum(n_valid))
-        
-    

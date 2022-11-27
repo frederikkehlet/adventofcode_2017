@@ -11,11 +11,3 @@ with open('input.txt', 'r') as file:
             n_valid = n_valid + 1
 
     print(n_valid)
-            
-    
-        
-    
-
-
-        
-    
