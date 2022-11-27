@@ -7,7 +7,7 @@ with open('input.txt', 'r') as file:
         sum = sum + int(numbers[i]) if (numbers[i] == numbers[i+halfStep]) else sum
 
     i = len(numbers) / 2
-    for i in range(int(i),int(len(numbers))):
+    for i in range(halfStep,int(len(numbers))):
         sum = sum + int(numbers[i]) if (numbers[i] == numbers[abs(len(numbers) - (i + halfStep))]) else sum
 
     print(sum)
