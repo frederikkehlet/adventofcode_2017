@@ -8,19 +8,17 @@ with open('input.txt','r') as file:
     while permutationExists != True:     
         blocks = max(banks)
         index = banks.index(blocks)
-        banks[banks.index(blocks)] = 0 
+        banks[index] = 0 
 
         while blocks > 0:
             index = index + 1 if (index != len(banks) - 1) else 0
             banks[index] = banks[index] + 1
             blocks = blocks - 1
-
-        newBanks = banks.copy()
-        
+ 
         if (banks in permutations):
             permutationExists = True          
         else:
-            permutations.append(newBanks)
+            permutations.append(banks.copy())
         
         redistributions = redistributions + 1
 
