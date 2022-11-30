@@ -23,8 +23,3 @@ with open('input.txt', 'r') as file:
             registers[operation[0]] = registers[operation[0]] + int(operation[2]) if operation[1] == "inc" else registers[operation[0]] - int(operation[2])
         
     print(list(sorted(registers.items(), key=lambda x:x[1])[-1])[1])
-
-        
-
-
-    
